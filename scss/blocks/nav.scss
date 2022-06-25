@@ -1,0 +1,115 @@
+header {
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  font-style: normal;
+  font-weight: 600;
+  color: black;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+.nav__btn {
+  border: none;
+  background-color: rgba(255, 211, 144, 1);
+  background: linear-gradient(
+    to right,
+    rgba(255, 211, 144, 1),
+    rgba(255, 133, 80, 1)
+  );
+  border-radius: 20px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  min-width: 150px;
+  max-height: 60px;
+
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding: 15px;
+}
+.nav__link_big {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+
+  margin-left: 0;
+  margin-right: 13%;
+}
+.button__nav {
+  display: none;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+}
+// NAV BUTTON
+
+/* nav-icon-5 */
+.nav-icon-5 {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.nav-icon-5 span {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms;
+}
+.nav-icon-5 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+.nav-icon-5 span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+  opacity: 1;
+}
+.nav-icon-5 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+.nav-icon-5:not(.open):hover span:nth-child(1) {
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.nav-icon-5:not(.open):hover span:nth-child(2) {
+  transform: rotate(3deg) scaleY(1.1);
+}
+.nav-icon-5:not(.open):hover span:nth-child(3) {
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.nav-icon-5.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+.nav-icon-5.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-icon-5.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+@media screen and(max-width: 900px) {
+  nav {
+    display: none;
+  }
+  .button__nav {
+    display: block;
+  }
+}

@@ -1,0 +1,19 @@
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  opacity: 1;
+}
+// .footer-hidden {
+//   display: none;
+// }
+.footer__info,
+.footer__terms,
+.footer__privacy-policy {
+  margin: 40px auto;
+}
+footer a {
+  color: #51320d;
+}
+footer ul {
+  list-style-type: none;
+}

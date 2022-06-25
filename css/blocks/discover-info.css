@@ -1,0 +1,8 @@
+.discover-info {
+  display: flex;
+}
+
+.discover__video {
+  max-width: 300px;
+  max-height: 300px;
+}
